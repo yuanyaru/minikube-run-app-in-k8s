@@ -2,7 +2,6 @@
 
 # 禁用swap分区
 swapoff -a
-echo 1 > /proc/sys/net/bridge/bridge-nf-call-iptables
 
 # 安装docker
 ./docker_install.sh
@@ -19,7 +18,6 @@ gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors
 EOF
 
 yum install -y kubectl
-systemctl enable kubelet.service
 
 # 安装minikube
 curl -Lo minikube http://kubernetes.oss-cn-hangzhou.aliyuncs.com/minikube/releases/v1.4.0/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/

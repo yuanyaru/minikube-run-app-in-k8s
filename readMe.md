@@ -24,6 +24,7 @@
 ![Image text](images/search_minikube.jpg)
 
 2. restart_minikube.sh
+一般第一次会启动失败，重启就可以了
 * 删除现有的 minikube 及相关配置文件
 * 重新启动 minikube
 ### 创建 Node.js 应用程序
