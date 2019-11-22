@@ -10,5 +10,3 @@ ln -s node-v8.11.4-linux-x64/bin/npm /usr/local/bin/npm
 # 验证
 node -v
 npm -v
-
-
